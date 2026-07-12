@@ -37,10 +37,6 @@ app.get("/", (req, res) => {
 // uploads folder
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-
-// uploads folder ah static ah serve pannu - '..' illa
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/documents', documentRoutes);
