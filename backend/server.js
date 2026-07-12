@@ -30,6 +30,14 @@ app.use(cors({
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("AI Learning Assistant Backend is Running 🚀");
+});
+
+// uploads folder
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+
 // uploads folder ah static ah serve pannu - '..' illa
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
