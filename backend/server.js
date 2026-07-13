@@ -26,7 +26,7 @@ connectDB();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://ai-learning-assistant-7zjvcznc8-viviliya.vercel.app"
+    "https://ai-learning-assistant-iota-khaki.vercel.app",
   ],
   credentials: true,
 }));
