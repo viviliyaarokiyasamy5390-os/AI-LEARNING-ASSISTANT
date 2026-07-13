@@ -24,10 +24,7 @@ const __dirname = path.dirname(__filename);
 connectDB();
 
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://ai-learning-assistant-iota-khaki.vercel.app",
-  ],
+  origin: process.env.FRONTEND_URL,
   credentials: true,
 }));
 
