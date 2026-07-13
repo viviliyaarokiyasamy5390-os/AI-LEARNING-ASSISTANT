@@ -24,8 +24,11 @@ const __dirname = path.dirname(__filename);
 connectDB();
 
 app.use(cors({
-  origin: 'http://localhost:5173',
-  credentials: true
+  origin: [
+    "http://localhost:5173",
+    "https://ai-learning-assistant-7zjvcznc8-viviliya.vercel.app"
+  ],
+  credentials: true,
 }));
 
 app.use(express.json());
